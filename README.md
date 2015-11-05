@@ -11,3 +11,9 @@ Python
 -------
 **Clear compiled .pyc files**<br />
 `find . -name "*.pyc" -exec rm -rf {} \;`
+
+
+Django
+-------
+**Show all Installed URL Routes**<br />
+`/manage.py show_urls`
