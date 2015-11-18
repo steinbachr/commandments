@@ -53,3 +53,20 @@ Django
 -------
 **Show all Installed URL Routes**<br />
 `/manage.py show_urls`
+
+
+Android
+--------
+**Completely Wipe Android Studio (http://stackoverflow.com/questions/17625622/how-to-completely-uninstall-android-studio)**<br />
+```
+rm -Rf /Applications/Android\ Studio.app
+rm -Rf ~/Library/Preferences/AndroidStudio*
+rm ~/Library/Preferences/com.google.android.studio.plist
+rm -Rf ~/Library/Application\ Support/AndroidStudio*
+rm -Rf ~/Library/Logs/AndroidStudio*
+rm -Rf ~/Library/Caches/AndroidStudio*
+rm -Rf ~/AndroidStudioProjects
+rm -Rf ~/.gradle
+rm -Rf ~/.android
+rm -Rf ~/Library/Android*
+```
