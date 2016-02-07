@@ -43,6 +43,17 @@ for symlink in $SHELLMARKSDIR/*; do # load all existing symlinks as aliases
 done
 ```
 
+Shell Workflows
+-------
+**Make USB Stick Bootable**
+```
+hdiutil convert -format UDRW -o ~/path/to/target.img ~/path/to/ubuntu.iso
+diskutil list
+diskutil unmountDisk /dev/diskN
+sudo dd if=/path/to/downloaded.img of=/dev/rdiskN bs=1m
+diskutil eject /dev/diskN
+```
+
 Python
 -------
 **Clear compiled .pyc files**<br />
