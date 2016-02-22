@@ -81,3 +81,8 @@ rm -Rf ~/.gradle
 rm -Rf ~/.android
 rm -Rf ~/Library/Android*
 ```
+
+
+Packages
+---------
+`https://github.com/santinic/how2`
