@@ -85,4 +85,4 @@ rm -Rf ~/Library/Android*
 
 Packages
 ---------
-`https://github.com/santinic/how2`
+https://github.com/santinic/how2
