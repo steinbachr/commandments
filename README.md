@@ -41,6 +41,10 @@ for symlink in $SHELLMARKSDIR/*; do # load all existing symlinks as aliases
     mark_alias $symlink
     test -e $symlink || rm $symlink # remove symlinks if source does not exist
 done
+
+export PROMPT_COMMAND='if [ "$(id -u)" -ne 0 ]; then echo "$(date "+%Y-%m-%d.%H:%M:%S") $(pwd) $(fc -l -1)" >> ~/.logs/bash-history-$(date "+%Y-%m-%d").log; fi'
+
+precmd() { eval "$PROMPT_COMMAND" }
 ```
 
 Shell Workflows
